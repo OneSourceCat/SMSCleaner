@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ynu.software.shixun"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="ynu.software.shixun.main.MainActivity_message"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ynu.software.shixun.blackwhitelist.BlacklistActivity"></activity>
+        <activity android:name="ynu.software.shixun.blackwhitelist.BlackNumberActivity"></activity>
+        <activity android:name="ynu.software.shixun.blackwhitelist.WatchRubbishMessage"></activity>
+        <activity android:name="ynu.software.shixun.blackwhitelist.RubbishItem"></activity>
+        <activity android:name="ynu.software.shixun.blackwhitelist.AddBlackNumberFromContact"></activity>
+        <activity android:name="ynu.software.shixun.blackwhitelist.WhiteNumberActivity"></activity>
+        <activity android:name="ynu.software.shixun.main.AddNewActivity"></activity>
+        <activity android:name="ynu.software.shixun.main.BlacklistActivity"></activity>
+        <activity android:name="ynu.software.shixun.main.MessageActivity"></activity>
+        <activity android:name="ynu.software.shixun.main.SelfActivity"></activity>
+        <activity android:name="ynu.software.shixun.main.SetActivity"></activity>
+        <activity android:name="ynu.software.shixun.main.WhitelistActivity"></activity>
+        <activity android:name="ynu.software.shixun.main.MainActivity_firewall"></activity> 
+        <!-- blacklistfilter -->
+        <activity android:name="ynu.software.shixun.blacklistfilter.EntryActivity"></activity>
+        <activity android:name="ynu.software.shixun.blacklistfilter.BlackNumberActivity"></activity>
+        <activity android:name="ynu.software.shixun.blacklistfilter.WatchRubbishMessage"></activity>
+        <activity android:name="ynu.software.shixun.blacklistfilter.RubbishItem"></activity>
+        <activity android:name="ynu.software.shixun.blacklistfilter.AddBlackNumberFromContact"></activity>
+        <activity android:name="ynu.software.shixun.blacklistfilter.WhiteNumberActivity"></activity>
+		<receiver android:name ="ynu.software.shixun.smsfraud_register.BootBroadcast">
+	    	<intent-filter android:priority="2147483647">
+	    	    <action android:name="android.intent.action.BOOT_COMPLETED"/>
+	    	</intent-filter>
+		</receiver>
+		<receiver android:name="ynu.software.shixun.smsfraud_register.SMSReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="ynu.software.shixun.main.MyService"></service>
+        </application>
+
+  
+		<uses-permission android:name="android.permission.SEND_SMS"/>
+		<uses-permission android:name="android.permission.INTERNET"/>
+		<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+   		<uses-permission android:name="android.permission.READ_SMS"/>
+   		<uses-permission android:name="android.permission.READ_CONTACTS"/>
+   	 	<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+   	 	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+   	 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+	    <uses-permission android:name="android.permission.WRITE_SMS"/>
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="黑白名单" >
+        <PreferenceScreen android:title="白名单" android:key="whitelist"></PreferenceScreen>
+        <PreferenceScreen android:title="黑名单" android:key="blacklist"></PreferenceScreen>
+    </PreferenceCategory>
+	<PreferenceCategory android:title="高级设置" >
+	    <CheckBoxPreference android:title="开启欺诈短信拦截" android:key="fraudmessage" android:defaultValue="true"></CheckBoxPreference>
+	     <CheckBoxPreference android:title="伪基站拦截" android:key="message" android:defaultValue="true"></CheckBoxPreference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="拦截服务" >
+	    <CheckBoxPreference android:title="开启本地贝叶斯骚扰拦截模块" android:key="enable" android:defaultValue="true"></CheckBoxPreference>
+	    <CheckBoxPreference android:title="开启云端贝叶斯骚扰拦截模块" android:key="cloudenable" android:defaultValue="true"></CheckBoxPreference>
+	    <PreferenceScreen android:title="帮助" android:key="help"></PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

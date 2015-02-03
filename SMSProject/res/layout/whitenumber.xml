@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:text="白名单号码"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_add_whitenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:text="添加"
+            />
+    </LinearLayout>
+
+     <ListView
+         android:id="@+id/lv_whitenumber1"
+         android:layout_below="@id/ll2"
+         android:layout_width="fill_parent"
+         android:layout_height="355dip" >
+     </ListView>
+     
+    <LinearLayout 
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+   
+    <Button 
+        android:id="@+id/bt_add_allcontact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="一键导入"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

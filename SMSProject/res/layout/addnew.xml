@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+  	  android:layout_width="fill_parent"
+   	  android:layout_height="fill_parent">
+
+    <LinearLayout 
+      android:orientation="vertical"
+  	  android:layout_width="match_parent"
+   	  android:layout_height="wrap_content"
+   	  android:layout_weight="1">
+		<EditText
+		    android:id="@+id/number"
+		   	android:layout_width="fill_parent"
+		    android:layout_height="60dip"
+		    android:text="电话号码(必填)"/>
+		<EditText
+		    android:id="@+id/name"
+		   	android:layout_width="fill_parent"
+		    android:layout_height="60dip"
+		    android:text="名称"/>
+	</LinearLayout>
+	<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true">
+	    <Button 
+		    android:id="@+id/saveadd" 
+		    android:layout_width="160dip"
+		    android:layout_height="wrap_content"
+		    android:text="保存"/>
+	    <Button 
+		    android:id="@+id/canceladd" 
+		    android:layout_width="160dip"
+		    android:layout_height="wrap_content"
+		    android:text="取消"/>
+	    
+	</LinearLayout>
+
+</LinearLayout>

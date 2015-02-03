@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Administrator.WIN-20130812CHJ/Desktop/智能骚扰短信识别项目/中文分词/分词jar包/je-analysis-1.5.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Administrator.WIN-20130812CHJ/Desktop/智能骚扰短信识别项目/中文分词/分词jar包/lucene-core-2.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Administrator.WIN-20130812CHJ/Desktop/智能骚扰短信识别项目/中文分词/分词jar包/lucene-demos-2.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Administrator.WIN-20130812CHJ/Desktop/智能骚扰短信识别项目/中文分词/IKAnalyzer2012_u6/IKAnalyzer2012_u6.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

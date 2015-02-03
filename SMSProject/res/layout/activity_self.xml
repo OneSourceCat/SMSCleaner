@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:textSize="25sp"
+        android:text="本系统的自学习模块会自动从您的短信库中选取一定量的短信作为新的训练集，不会对您的隐私构成威胁" />
+
+    <Button
+        android:id="@+id/button_selflearning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="开始自学习" />
+    
+</RelativeLayout>

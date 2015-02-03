@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mode">
+        <item>只允许白名单</item>
+        <item>只拦截黑名单</item>
+        <item>只接受通讯录</item>
+        <item>默认模式</item>
+    </string-array>
+    <string-array name="modevalue">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>
